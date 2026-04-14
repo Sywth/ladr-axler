@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+
+% ── Encoding & fonts ──────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% ── Page geometry ─────────────────────────────────────────────────────────────
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+% ── Core math ─────────────────────────────────────────────────────────────────
+\usepackage{amsmath}      % aligned equations, \text{}, \DeclareMathOperator, etc.
+\usepackage{amssymb}      % \mathbb{R}, \mathbb{F}, \emptyset, etc.
+\usepackage{amsthm}       % theorem environments
+\usepackage{mathtools}    % \coloneqq, augmented matrices, fixes amsmath
+
+% ── Theorem environments ──────────────────────────────────────────────────────
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+
+% ── Linear algebra operators (Axler notation) ─────────────────────────────────
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Range}{range}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\diag}{diag}
+\newcommand{\F}{\mathbb{F}}                      % generic field
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\inner}[2]{\langle #1,\, #2 \rangle} % inner product ⟨u, v⟩
+
+% ── Typography & quality-of-life ──────────────────────────────────────────────
+\usepackage{enumitem}   % better list control
+\usepackage{microtype}  % better text justification
+\usepackage{hyperref}   % clickable TOC links (load last)
+\usepackage{subfiles}   % standalone child compilation
+
+% ── Document metadata ─────────────────────────────────────────────────────────
+\title{\textbf{Linear Algebra Done Right}\\[0.4em]
+       \large Notes \& Queries --- Axler (4th ed.)}
+\author{}
+\date{}
+
+% =============================================================================
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  PART I: NOTES & QUERIES  (chapter by chapter)
+% ─────────────────────────────────────────────────────────────────────────────
+
+\section{Vector Spaces}
+\subfile{c1-vector-spaces/notes}
+\subfile{c1-vector-spaces/queries}
+
+\section{Finite-Dimensional Vector Spaces}
+\subfile{c2-finite-dimensional-vector-spaces/notes}
+\subfile{c2-finite-dimensional-vector-spaces/queries}
+
+\section{Linear Maps}
+\subfile{c3-linear-maps/notes}
+\subfile{c3-linear-maps/queries}
+
+\section{Polynomials}
+\subfile{c4-polynomials/notes}
+\subfile{c4-polynomials/queries}
+
+\section{Eigenvalues and Eigenvectors}
+\subfile{c5-eigenvalues-and-eigenvectors/notes}
+\subfile{c5-eigenvalues-and-eigenvectors/queries}
+
+\section{Inner Product Spaces}
+\subfile{c6-inner-product-spaces/notes}
+\subfile{c6-inner-product-spaces/queries}
+
+\section{Operators on Inner Product Spaces}
+\subfile{c7-operators-on-inner-product-spaces/notes}
+\subfile{c7-operators-on-inner-product-spaces/queries}
+
+\section{Operators on Complex Vector Spaces}
+\subfile{c8-operators-on-complex-vector-spaces/notes}
+\subfile{c8-operators-on-complex-vector-spaces/queries}
+
+\section{Multilinear Algebra and Determinants}
+\subfile{c9-multilinear-algebra-and-determinants/notes}
+\subfile{c9-multilinear-algebra-and-determinants/queries}
+
+\newpage
+% ─────────────────────────────────────────────────────────────────────────────
+%  PART II: ANSWERS  (all chapters collected at end)
+% ─────────────────────────────────────────────────────────────────────────────
+
+\section*{Answers}
+\addcontentsline{toc}{section}{Answers}
+
+\subsection*{Chapter 1 --- Vector Spaces}
+\subfile{c1-vector-spaces/answers}
+
+\subsection*{Chapter 2 --- Finite-Dimensional Vector Spaces}
+\subfile{c2-finite-dimensional-vector-spaces/answers}
+
+\subsection*{Chapter 3 --- Linear Maps}
+\subfile{c3-linear-maps/answers}
+
+\subsection*{Chapter 4 --- Polynomials}
+\subfile{c4-polynomials/answers}
+
+\subsection*{Chapter 5 --- Eigenvalues and Eigenvectors}
+\subfile{c5-eigenvalues-and-eigenvectors/answers}
+
+\subsection*{Chapter 6 --- Inner Product Spaces}
+\subfile{c6-inner-product-spaces/answers}
+
+\subsection*{Chapter 7 --- Operators on Inner Product Spaces}
+\subfile{c7-operators-on-inner-product-spaces/answers}
+
+\subsection*{Chapter 8 --- Operators on Complex Vector Spaces}
+\subfile{c8-operators-on-complex-vector-spaces/answers}
+
+\subsection*{Chapter 9 --- Multilinear Algebra and Determinants}
+\subfile{c9-multilinear-algebra-and-determinants/answers}
+
+\end{document}
