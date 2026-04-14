@@ -21,4 +21,4 @@ just install-deps
 
 - `just serve` : Open a browser tab serving the PDF and auto-reload when the PDF changes
 
-- `just` : Compile the full document once and exit
+- `just` : Compile the full document once and exits
