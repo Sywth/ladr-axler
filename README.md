@@ -1,13 +1,13 @@
 # Sywth's Notes *for* Linear Algebra Done Right by Sheldon Axler
 
-## Setup
+## Setup (Debian Only)
 
 Install `just` (Debian/Ubuntu):
 ```bash
 sudo apt install just
 ```
 
-Install all dependencies:
+Now with the power of `just` we can just install all the dependencies needed to run this on a debian system.
 ```bash
 just install-deps
 ```
