@@ -30,15 +30,20 @@
 \newtheorem*{note}{Note}
 
 % ── Linear algebra operators (Axler notation) ─────────────────────────────────
-\DeclareMathOperator{\Span}{span}
-\DeclareMathOperator{\Null}{null}
-\DeclareMathOperator{\Range}{range}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\nullspace}{null}
+\DeclareMathOperator{\image}{im}
 \DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\kernel}{ker}
 \DeclareMathOperator{\tr}{tr}
 \DeclareMathOperator{\diag}{diag}
-\newcommand{\F}{\mathbb{F}}                      % generic field
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
+\newcommand{\Field}{\mathbb{F}}                      % generic field 
+\newcommand{\Real}{\mathbb{R}} 
+\newcommand{\Integer}{\mathbb{I}} 
+\newcommand{\Complex}{\mathbb{C}} 
+\newcommand{\Natural}{\mathbb{N}}
+\newcommand{\Whole}{\mathbb{W}}
 \newcommand{\inner}[2]{\langle #1,\, #2 \rangle} % inner product ⟨u, v⟩
 
 % ── Typography & quality-of-life ──────────────────────────────────────────────
@@ -135,4 +140,12 @@
 \subsection*{Chapter 9 - Multilinear Algebra and Determinants}
 \subfile{c9-multilinear-algebra-and-determinants/answers}
 
+
+% ─────────────────────────────────────────────────────────────────────────────
+%  PART III: FOOTNOTES
+% ─────────────────────────────────────────────────────────────────────────────
+
+\subsection*{Misc Notes}
+\subfile{cx-misc-notes/notes}
+%
 \end{document}

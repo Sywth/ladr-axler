@@ -1,0 +1,32 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\subsection*{Notes}
+
+
+\question{Prove that for some linear transform \(T : V \to W\) where \((\dim V) \in \Natural \) that we have  $\dim V = \nullity T + \rank T$}
+
+Lets firstly note that:
+\begin{align}
+  \nullity T &\coloneqq \dim \kernel T \\ 
+  \rank T &\coloneqq \dim \image T
+\end{align}
+
+
+Hence we re-write the original question as:
+\begin{align}
+  \dim V &= \nullity T + \rank T \\ 
+  \dim V &= \dim \kernel T + \dim \image T 
+\end{align}
+
+Lets let: 
+\begin{align}
+  n_T &= \dim \image T \\
+  k_T &= \dim \ker T 
+\end{align}
+
+Hence let \( B_{T, n} \coloneqq  \set{u_i}_{i=1}^{n_T} \) be a basis for \( \image T \) and let \( B_{T, k} \coloneqq  \set{v_i}_{i=1}^{k_T} \) be a basis for \(\ker T \)
+
+TODO WIP 
+
+\end{document}
