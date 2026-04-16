@@ -1,0 +1,22 @@
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+% \question{...}  – renders content in a calm blue box
+\newcommand{\question}[1]{%
+  \begin{tcolorbox}[
+    colback  = blue!6!white,
+    colframe = blue!45!black,
+    boxrule  = 0.6pt,
+    left     = 6pt, right = 6pt,
+    top      = 4pt, bottom = 4pt
+  ]#1\end{tcolorbox}}
+
+% \answer{...}  – indented, smaller; minimal visual weight
+\newcommand{\answer}[1]{%
+  \begin{quote}\small #1\end{quote}}
+
+% \query{...}  – single bullet point
+\newcommand{\query}[1]{%
+  \begin{itemize}[noitemsep, topsep=2pt]
+    \item #1
+  \end{itemize}}

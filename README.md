@@ -1,5 +1,7 @@
 # Sywth's Notes *for* Linear Algebra Done Right by Sheldon Axler
 
+> The textbook used *"Linear Algebra Done Right (4th ed.)"* by Sheldon Axler is published Open Access under a [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) license. The free electronic versions is available at [linear.axler.net](https://linear.axler.net) and is [used in this repo](./ladr-book.pdf).
+
 ## Setup (Debian Only)
 
 Install `just` (Debian/Ubuntu):
